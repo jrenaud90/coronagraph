@@ -201,7 +201,7 @@ def run():
                 ' at '+"{:.2f}".format(lam[ireflam])+r' $\mu$m'
 
         # Draw plot
-        ax.plot(lam, Cratio*1e9, lw=2.0, color="purple", alpha=0.7, ls="steps-mid")
+        ax.plot(lam, Cratio*1e9, lw=2.0, color="purple", alpha=0.7, ds="steps-mid")
         ax.errorbar(lam, spec*1e9, yerr=sig*1e9, fmt='o', color='k', ms=5.0)
 
         # Set labels

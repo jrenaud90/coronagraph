@@ -861,9 +861,9 @@ def count_rates(Ahr, lamhr, solhr,
         if True:
             import matplotlib.pyplot as plt;
             fig2, ax1 = plt.subplots(figsize=(8,6))
-            ax1.plot(lam, cthe, c="blue", ls="steps-mid", label="Earth Thermal")
-            ax1.plot(lam, cth, c="red", ls="steps-mid", label="Telescope Thermal")
-            ax1.plot(lam, cp, c="k", ls="steps-mid", label="Planet")
+            ax1.plot(lam, cthe, c="blue", ds="steps-mid", label="Earth Thermal")
+            ax1.plot(lam, cth, c="red", ds="steps-mid", label="Telescope Thermal")
+            ax1.plot(lam, cp, c="k", ds="steps-mid", label="Planet")
             ax1.set_ylabel("Photon Count Rate [1/s]")
             ax1.set_xlabel("Wavelength [um]")
             ax1.legend()
