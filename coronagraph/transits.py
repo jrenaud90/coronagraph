@@ -473,7 +473,7 @@ class EclipseNoise(object):
         Only returns `fig` and `ax` is ``ax0 is None``
         """
 
-        m = [self.SNRn > SNR_threshold]
+        m = self.SNRn > SNR_threshold
 
         scale = 1e6
 
@@ -1108,7 +1108,7 @@ class TransitNoise(object):
         Only returns `fig` and `ax` is ``ax0 is None``
         """
 
-        m = [self.SNRn > SNR_threshold]
+        m = self.SNRn > SNR_threshold
 
         scale = 1e6
 
