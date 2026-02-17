@@ -381,7 +381,7 @@ class CoronagraphNoise(object):
         else:
             ax = ax0
 
-        #ax.plot(lam, scale*RpRs2, alpha = 1.0, ls = "steps-mid")
+        #ax.plot(lam, scale*RpRs2, alpha = 1.0, ds = "steps-mid")
         ax.errorbar(self.lam[m], scale*self.Aobs[m], yerr=scale*self.Asig[m], zorder = 100, **err_kws)
         #ax.set_yscale("log")
 
@@ -417,7 +417,7 @@ class CoronagraphNoise(object):
         else:
             return
 
-    def plot_SNR(self, ax0 = None, plot_kws = {"ls" : "steps-mid"}):
+    def plot_SNR(self, ax0 = None, plot_kws = {"ds" : "steps-mid"}):
         """
         Plot the S/N on the planet as a function of wavelength.
 
@@ -456,7 +456,7 @@ class CoronagraphNoise(object):
         else:
             return
 
-    def plot_time_to_wantsnr(self, ax0 = None, plot_kws = {"ls" : "steps-mid", "alpha" : 1.0}):
+    def plot_time_to_wantsnr(self, ax0 = None, plot_kws = {"ds" : "steps-mid", "alpha" : 1.0}):
         """
         Plot the exposure time to get a SNR on the planet spectrum.
 
