@@ -39,7 +39,8 @@ setup(name='coronagraph',
                         'scipy',
                         'matplotlib',
                         'numba',
-                        'astropy'
+                        'astropy',
+                        'tk'
                         ],
       dependency_links=[],
       scripts=[],
