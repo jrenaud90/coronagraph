@@ -119,7 +119,7 @@ def run():
     ################################
 
     # Read-in spectrum file
-    fn = os.path.join(RELPATH, '../coronagraph/planets/earth_quadrature_radiance_refl.dat')
+    fn = os.path.join(RELPATH, os.pathdir, "coronagraph", "planets", "earth_quadrature_radiance_refl.dat")
     model = np.loadtxt(fn, skiprows=8)
     lamhr = model[:,0]
     radhr = model[:,1]

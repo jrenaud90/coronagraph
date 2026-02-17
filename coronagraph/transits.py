@@ -1333,16 +1333,14 @@ def get_earth_trans_spectrum():
 
     # Read in transit data
     here = os.path.join(os.path.dirname(__file__))
-    plus = "planets/earth_avg_hitran2012_300_100000cm.trnst"
-    data = np.loadtxt(os.path.join(here, plus))
+    data = np.loadtxt(os.path.join(here, "planets", "earth_avg_hitran2012_300_100000cm.trnst"))
 
     # Parse
     lam = data[:,0]
     tdepth = data[:,3]
 
     # Read in flux data
-    plus = "planets/earth_avg_hitran2012_300_100000cm_toa.rad"
-    data = np.loadtxt(os.path.join(here, plus))
+    data = np.loadtxt(os.path.join(here, "planets", "earth_avg_hitran2012_300_100000cm_toa.rad"))
 
     # Parse
     fplan = data[:,3]
