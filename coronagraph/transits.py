@@ -556,7 +556,7 @@ class EclipseNoise(object):
             return
 
     def plot_ntran_to_wantsnr(self, ax0 = None,
-                              plot_kws = {"ls" : "steps-mid", "alpha" : 1.0}):
+                              plot_kws = {"ds" : "steps-mid", "alpha" : 1.0}):
         """
         Plot the number of eclipses to get a SNR on the eclipse depth as
         a function of wavelength.
