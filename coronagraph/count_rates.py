@@ -369,7 +369,7 @@ class CoronagraphNoise(object):
         Only returns `fig` and `ax` is ``ax0 is None``
         """
 
-        m = [self.SNRt > SNR_threshold]
+        m = self.SNRt > SNR_threshold
 
         scale = 1
 
